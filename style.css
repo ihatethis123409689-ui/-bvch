@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background: black;
+    font-family: monospace;
+    color: #00ff00;
+    /* Force landscape */
+    width: 100vw;
+    height: 100vh;
+}
+#login {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    text-align: center;
+}
+#gui {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0,0,0,0.8);
+    padding: 8px;
+    border: 1px solid #00ff00;
+    z-index: 10;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+button, input[type="text"], input:not([type="file"]) {
+    margin: 2px;
+    background: black;
+    color: #00ff00;
+    border: 1px solid #00ff00;
+    padding: 6px 10px;
+    font-family: monospace;
+}
+input[type="file"] {
+    color: #00ff00;
+    font-size: 11px;
+    max-width: 100px;
+}
+/* Left joystick - bottom left */
+#joystick-left {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    width: 120px;
+    height: 120px;
+    z-index: 10;
+}
+/* Right joystick - bottom right */
+#joystick-right {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    width: 120px;
+    height: 120px;
+    z-index: 10;
+}

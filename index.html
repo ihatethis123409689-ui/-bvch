@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Lets Hac</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="login">
+    <input id="username" placeholder="Enter Name">
+    <button id="joinBtn">Join</button>
+</div>
+<div id="gui" style="display:none;">
+    <input type="file" id="pngUpload" accept="image/png">
+    <button id="spawnBtn">Spawn Prop</button>
+    <button id="overrideBtn">Texture Override</button>
+</div>
+<div id="override-timer" style="display:none;"></div>
+<div id="joystick-left"></div>
+<div id="joystick-right"></div>
+<script src="https://cdn.jsdelivr.net/npm/three@0.152/build/three.min.js"></script>
+<script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/nipplejs/0.9.0/nipplejs.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
